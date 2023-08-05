@@ -4,14 +4,14 @@ import { useMemo } from "react"
 import { useDispatch } from "react-redux"
 import { setActiveNote } from "../../store/journal/journalSlice"
 
-const SidebarItem = ({note, imgUrls = []}) => {
+const SidebarItem = ({note, imageUrls = []}) => {
 
     const dispatch = useDispatch()
 
 
     // Activar la nota respectiva en la que se de click (#2).
     const handleClickActiveNote = () => {
-        dispatch(setActiveNote({...note, imgUrls}))
+        dispatch(setActiveNote({...note, imageUrls}))
     }
 
     // Función que limita la cantidad de texto que debe contener el body del sidebar (#1)

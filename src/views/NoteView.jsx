@@ -112,7 +112,7 @@ const NoteView = () => {
         </Grid>
 
         {/*Image gallery */}
-        <ImageGallery images={note.imgUrls}/>
+        <ImageGallery images={note.imageUrls}/>
 
     </Grid>
   )

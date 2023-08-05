@@ -13,7 +13,7 @@ export const journalSlice = createSlice({
         //     title: '',
         //     body: '',
         //     date: 132465,
-        //     imgUrls: [],
+        //     imageUrls: [],
         // }
         
     },
@@ -48,7 +48,7 @@ export const journalSlice = createSlice({
             state.messageSave = `${action.payload.title}, actualizada correctamente`;
         },
         setPhotosToActiveNote: (state, action) => {
-            state.active.imgUrls = [...state.active.imgUrls, ...action.payload];
+            state.active.imageUrls = [...state.active.imageUrls, ...action.payload];
             state.isSaving = false
         },
         clearNotesLogOut: (state) => {

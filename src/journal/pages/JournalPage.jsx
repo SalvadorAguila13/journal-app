@@ -23,8 +23,6 @@ const JournalPage = () => {
         : <NothingSelectedView/>
       }
       
-      
-
 
       {/* Boton global */}
       <IconButton
